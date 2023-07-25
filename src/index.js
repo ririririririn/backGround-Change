@@ -4,13 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChangeProvider } from "./context/ChangeContext";
+import App2 from "./App2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ChangeProvider>
-      <App />
-    </ChangeProvider>
+    {/* <ChangeProvider> */}
+    <App2 />
+    {/* </ChangeProvider> */}
   </React.StrictMode>
 );
 

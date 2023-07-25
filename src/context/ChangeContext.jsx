@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 export const ChangeContext = createContext();
 
@@ -11,9 +11,7 @@ export function ChangeProvider({ children }) {
   };
 
   return (
-    <ChangeContext.Provider
-      value={{ bgColor, setBgColor, toggleChageBackGround }}
-    >
+    <ChangeContext.Provider value={{ setBgColor, toggleChageBackGround }}>
       {children}
     </ChangeContext.Provider>
   );
